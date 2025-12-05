@@ -9,12 +9,36 @@ This repository contains all code and materials for the CMPT 419 final project o
 This project investigates how individual samples in the NIH ChestXray14 dataset contribute to model performance. A DenseNet-121 model is trained with focal loss, label smoothing, and AdamW optimization. Per-sample influence is computed with TracIn, and two data-centric experiments—removing and selecting samples based on influence—are performed. The results uncover substantial dataset redundancy and compressibility.
 
 **Repository Structure**
-src/                Main training, influence scoring, and subset experiment code
-results/            Final metrics, tables, plots, histograms
-figures/            Visual abstract and diagrams used in the report
-report/             Final PDF and LaTeX source (optional)
-notebooks/          Optional exploratory notebooks
-scripts/            Helper scripts (dataset download, experiment runner)
+
+CMPT419-Influence-Valuation/
+│
+├── src/
+│   ├── baseline_nih_chestxray.py      # DenseNet model training
+│   ├── tracin_influence.py            # Per-sample influence scoring
+│   ├── subset_experiments.py          # Removal/selection experiments
+│   └── plot_templates.py              # Plotting utilities
+│
+├── results/
+│   ├── baseline_per_class_auroc.csv
+│   ├── influence_rankings.csv
+│   └── subset_results.csv
+│
+├── figures/
+│   ├── influence_hist.png
+│   ├── performance_curve_remove.png
+│   ├── performance_curve_select.png
+│   ├── performance_curve_f1_remove.png
+│   └── performance_curve_f1_select.png
+│
+├── scripts/
+│   ├── run_full_pipeline.sh
+│   └── run_full_pipeline.ps1
+│
+├── report/
+│   └── CMPT419_Final_Report.pdf
+│   
+├── requirements.txt
+└── README.md
 
 **Dataset**
 
