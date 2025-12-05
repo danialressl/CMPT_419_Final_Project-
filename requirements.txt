@@ -1,0 +1,15 @@
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+numpy==1.26.3
+scipy==1.13.1
+pandas==2.3.3
+scikit-learn==1.6.1
+matplotlib==3.9.4
+pillow==11.3.0
+tqdm==4.67.1
+networkx==3.2.1
+joblib==1.5.2
+typing_extensions==4.15.0
+packaging==25.0
+fsspec==2025.9.0
+filelock==3.19.1
