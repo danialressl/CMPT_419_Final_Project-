@@ -18,10 +18,10 @@ Place the dataset in:
 
 data/
 
-
 The repository expects the following structure:
 
-data/images/\n
+data/images/
+
 data/Data_Entry_2017.csv
 
 **Setup**
@@ -33,13 +33,17 @@ pip install -r requirements.txt
 **Running Experiments**
 
 Baseline training:
+
 python src/baseline.py --epochs 5 --loss focal --backbone densenet121
 
 Influence scoring:
+
 python src/tracin_influence.py --checkpoints ./checkpoints --output results/influence.csv
 
 Subset experiments:
+
 python src/subset_experiments.py --mode remove
+
 python src/subset_experiments.py --mode select
 
 **Results**
