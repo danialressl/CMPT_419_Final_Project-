@@ -12,7 +12,7 @@ This project investigates how individual samples in the NIH ChestXray14 dataset 
 
 To download NIH ChestXray14, follow instructions from Kaggle:
 
-https://www.kaggle.com/datasets/nih-chest-xray/data
+[https://www.kaggle.com/datasets/nih-chest-xray/data](https://www.kaggle.com/datasets/nih-chest-xrays/data)
 
 Place the dataset in:
 
