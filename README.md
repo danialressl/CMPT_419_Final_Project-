@@ -18,35 +18,28 @@ scripts/            Helper scripts (dataset download, experiment runner)
 
 **Dataset**
 
-The dataset is NOT included due to license restrictions.
-
 To download NIH ChestXray14, follow instructions from Kaggle:
 
 https://www.kaggle.com/datasets/nih-chest-xray/data
 
 Place the dataset in:
 
-data/NIH14/
+data/
 
 
 The repository expects the following structure:
 
-data/NIH14/images/
-data/NIH14/Data_Entry.csv
+data/images/
+data/Data_Entry_2017.csv
 
 **Setup**
 
 Install dependencies:
 
-conda env create -f environment.yml
-conda activate influence-env
-
-
-or:
-
 pip install -r requirements.txt
 
 **Running Experiments**
+
 Baseline training:
 python src/baseline.py --epochs 5 --loss focal --backbone densenet121
 
