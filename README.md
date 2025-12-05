@@ -21,7 +21,7 @@ data/
 
 The repository expects the following structure:
 
-data/images/
+data/images/\n
 data/Data_Entry_2017.csv
 
 **Setup**
